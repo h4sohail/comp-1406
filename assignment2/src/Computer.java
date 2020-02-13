@@ -14,11 +14,10 @@ public abstract class Computer extends Product {
 
     public double getCpuSpeed() { return cpuSpeed; }
     public int getRam() { return ram; }
-    public boolean isSsd() { return hasSSD; }
     public int getStorage() { return storage; }
 
-    public String stringTemplate(boolean ssd) {
-        if(ssd){
+    public String stringTemplate() {
+        if(hasSSD){
             return String.format(" CPU speed is %.2f gHz, RAM amount is %d GB, storage space is %d GB (SSD) " +
                     "(%.2f dollars each with %d in stock and %d sold)" +
                     "", getCpuSpeed(), getRam(), getStorage(), getPrice(), getStockQuantity(), getSoldQuantity());

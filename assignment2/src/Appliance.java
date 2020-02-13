@@ -15,7 +15,7 @@ public abstract class Appliance extends Product {
     public String getBrand() { return brand; }
 
     public String stringTemplate() {
-        return String.format(", %d watts and the color is %s (%.2f dollars each with %d in stock and %d sold)" +
+        return String.format("%d watts and the color is %s (%.2f dollars each with %d in stock and %d sold)" +
                 "", getWattage(), getColor(), getPrice(), getStockQuantity(), getSoldQuantity());
     }
 }

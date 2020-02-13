@@ -8,6 +8,6 @@ public class Laptop extends Computer {
 
     @Override
     public String toString() {
-        return screenSize + stringTemplate(isSsd());
+        return screenSize + " inch Laptop" + stringTemplate();
     }
 }

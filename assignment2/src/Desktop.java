@@ -8,6 +8,6 @@ public class Desktop extends Computer {
 
     @Override
     public String toString() {
-            return profile + stringTemplate(isSsd());
+            return profile + " Desktop" + stringTemplate();
     }
 }
