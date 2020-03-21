@@ -3,7 +3,8 @@ public class Desktop {
     int ramAmount;
     int storageSpace;
     boolean hasSSD;
-    public Desktop(double cpuSpeed, int ramAmount, int storageSpace, boolean hasSSD){
+
+    public Desktop(double cpuSpeed, int ramAmount, int storageSpace, boolean hasSSD) {
         this.cpuSpeed = cpuSpeed;
         this.ramAmount = ramAmount;
         this.storageSpace = storageSpace;
@@ -12,19 +13,18 @@ public class Desktop {
 
     @Override
     public String toString() {
-        if (hasSSD){
+        if (hasSSD) {
             return "Desktop: " +
-                "CPU Speed is " + cpuSpeed + "gHz" +
-                ", RAM Amount is " + ramAmount + "GB" +
-                ", Storage Space is " + storageSpace + "GB" +
-                ", Has SSD";
-        }
-        else{
-         return "Desktop: " +
-                "CPU Speed is" + cpuSpeed + "gHz" +
-                ", RAM Amount is" + ramAmount + "GB" +
-                ", Storage Space is " + storageSpace + "GB" +
-                ", Has HDD";
+                    "CPU Speed is " + cpuSpeed + "gHz" +
+                    ", RAM Amount is " + ramAmount + "GB" +
+                    ", Storage Space is " + storageSpace + "GB" +
+                    ", Has SSD";
+        } else {
+            return "Desktop: " +
+                    "CPU Speed is" + cpuSpeed + "gHz" +
+                    ", RAM Amount is" + ramAmount + "GB" +
+                    ", Storage Space is " + storageSpace + "GB" +
+                    ", Has HDD";
         }
     }
 }
