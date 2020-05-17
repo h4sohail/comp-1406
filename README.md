@@ -1,2 +1,2 @@
 # comp_1406
-Solutions to COMP 1406 assignments
+My solutions to COMP 1406 assignments
